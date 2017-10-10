@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Create a route for an about view
+Route::get('about', function () {
+    return view('about');
 });
+
+// Create route for form display
+Route::get('/', 'MenuController@index');
+
+// Create route for found dish/es
+Route::get('/find-dish/', 'MenuController@findDish');
