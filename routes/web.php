@@ -12,7 +12,7 @@
 */
 
 // Create a route for an about view
-Route::get('about', function () {
+Route::get('about', function() {
     return view('about');
 });
 
