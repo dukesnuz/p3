@@ -1,4 +1,15 @@
 <?php
+Route::get('/env', function () {
+    dump(config('app.name'));
+    dump(config('app.env'));
+    dump(config('app.debug'));
+    dump(config('app.url'));
+});
+
+/**
+* PracticeController
+*/
+Route::any('/practice/{n?}', 'PracticeController@index');
 
 /*
 |--------------------------------------------------------------------------
