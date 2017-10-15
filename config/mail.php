@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'supportEmail'=>'david@ajaxtransport.com',
-    'systemEmail'=>'david@ajaxtransport.com',
+    'supportEmail'=>'email@example.com',
+    'systemEmail'=>'email@example.com',
     /*
     |--------------------------------------------------------------------------
     | Mail Driver

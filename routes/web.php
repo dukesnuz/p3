@@ -4,6 +4,8 @@ Route::get('/env', function () {
     dump(config('app.env'));
     dump(config('app.debug'));
     dump(config('app.url'));
+    dump(config('mail'));    
+
 });
 
 /**
