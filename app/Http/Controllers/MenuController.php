@@ -11,12 +11,18 @@ class MenuController extends Controller
 
 	public function index()
 	{
-		return 'Display form';
+		return view('menu.index');
 	}
 
 	public function findDish()
 	{
-		return 'Return found dish/es.';
+		 $path = database_path('menu.json');
+		 $menuJson = file_get_contents($path);
+		 $dishes = json_decode($menuJson, true);
+
+		return view('menu.finddish')->with([
+            'dishes' => $dishes
+		]);
 	}
 
 }

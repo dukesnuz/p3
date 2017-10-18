@@ -4,7 +4,7 @@ Route::get('/env', function () {
     dump(config('app.env'));
     dump(config('app.debug'));
     dump(config('app.url'));
-    dump(config('mail'));    
+    dump(config('mail'));
 
 });
 
@@ -33,4 +33,4 @@ Route::get('about', function () {
 Route::get('/', 'MenuController@index');
 
 // Create route for found dish/es
-Route::get('/find-dish/', 'MenuController@findDish');
+Route::get('/find-dish/{dish}/', 'MenuController@findDish');
