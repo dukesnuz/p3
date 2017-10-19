@@ -8,11 +8,6 @@ Route::get('/env', function () {
 
 });
 
-/**
-* PracticeController
-*/
-Route::any('/practice/{n?}', 'PracticeController@index');
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,12 +20,10 @@ Route::any('/practice/{n?}', 'PracticeController@index');
 */
 
 // Create a route for an about view
-Route::get('about', function () {
-    return view('about');
-});
+Route::get('/about', 'MenuController@about');
 
 // Create route for form display
 Route::get('/', 'MenuController@index');
 
 // Create route for found dish/es
-Route::get('/find-dish/{dish}/', 'MenuController@findDish');
+Route::get('/find-dish/', 'MenuController@findDish');

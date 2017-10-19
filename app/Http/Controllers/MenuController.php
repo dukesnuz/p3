@@ -25,4 +25,9 @@ class MenuController extends Controller
 		]);
 	}
 
+	public function about()
+	{
+		return view('menu.about');
+	}
+
 }

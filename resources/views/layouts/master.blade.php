@@ -2,6 +2,9 @@
 <html lang="{{ app()->getLocale() }}">
 <head>
 	<meta charset="utf-8">
+	<meta name="description" content="HES - Dynamic Web Applications - Project Three">
+    <meta name="keywords" content="html, css, php">
+    <meta name="author" content="David Petringa">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,7 +23,7 @@
 
 		<header class="banner">
 			<h1>HES - Dynamic Web Applications - Project 3</h1>
-			<h2>What's For Dinner?</h2>
+			<h2>{{ config('app.name') }}</h2>
 		</header>
 
 		<section>
@@ -28,15 +31,7 @@
 		</section>
 
 		<footer>
-
-			<ul>
-				<li>School: Harvard Extension</li>
-				<li>Class: Dynamic Web Applications</li>
-				<li>Assignment: Project three</li>
-				<li>Student: David Petringa</li>
-				<li>Coded: September 2017</li>
-			</ul>
-
+            @include('footers.footermain')
 		</footer>
 
 	</div><!--END wrapper div-->
