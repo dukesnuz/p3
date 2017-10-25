@@ -22,8 +22,17 @@ Route::get('/env', function () {
 // Create a route for an about view
 Route::get('/about', 'MenuController@about');
 
-// Create route for form display
-Route::get('/', 'MenuController@index');
-
 // Create route for found dish/es
-Route::get('/find-dish/', 'MenuController@findDish');
+Route::get('/find-dish/{title}', 'MenuController@findDish');
+
+// Create route for form display
+Route::get('/', 'WelcomeController');
+
+// Create a route for search form to search for dish/es
+Route::get('/create/', 'MenuController@create');
+
+// Create a search route
+Route::get('/search/', 'MenuController@search');
+
+// Create a show route
+Route::get('/show/', 'MenuController@show');

@@ -13,7 +13,7 @@
 	</title>
 
 	<!-- Fonts -->
-	<link href="./css/p3.css" rel="stylesheet" type="text/css">
+	<link href="/css/p3.css" rel="stylesheet" type="text/css">
 
 	@stack('head')
 
