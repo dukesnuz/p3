@@ -25,11 +25,6 @@ class MenuController extends Controller
 		]);
 	}
 
-	public function about()
-	{
-		return view('menu.about');
-	}
-
 	public function create()
 	{
 		return view('menu.create');
