@@ -28,6 +28,7 @@
 			<nav>
 				<ul>
 					<li><a href="/">Home</a></li>
+					<li><a href="find-dish/a">Not sure what this will be</a></li>
 					<li><a href="/create">Search</a></li>
 					<li><a href="/about">About</a></li>
 				</ul>
