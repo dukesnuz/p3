@@ -1,5 +1,7 @@
 <?php
-
+/* not using this Controllers
+* Replaced with UtilitiesController
+*
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -11,3 +13,4 @@ class WelcomeController extends Controller
 		return view('welcome');
 	}
 }
+*/

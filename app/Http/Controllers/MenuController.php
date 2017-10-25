@@ -30,6 +30,7 @@ class MenuController extends Controller
 		return view('menu.create');
 	}
 
+// working here
 	public function search(Request $request)
 	{
 		$path = database_path('menu.json');
@@ -51,7 +52,7 @@ class MenuController extends Controller
 			$foundDishes,
 		]);
 	}
-
+// working here
 	public function show(Request $request)
 	{
 		//return view('menu.show')->with([
