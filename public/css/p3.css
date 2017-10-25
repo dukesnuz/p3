@@ -75,3 +75,17 @@ input[type="text"], select, button {
 .outputHide {
 	display: none;
 }
+a:link {
+	text-decoration: none;
+}
+nav li {
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+    width: 60px;
+    text-align: center;
+    background-color: snow;
+    font-weight: bold;
+    letter-spacing: 2px;
+}

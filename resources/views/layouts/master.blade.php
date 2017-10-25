@@ -13,7 +13,7 @@
 	</title>
 
 	<!-- Fonts -->
-	<link href="/css/p3.css" rel="stylesheet" type="text/css">
+	<link href="/css/p3.css?a=1" rel="stylesheet" type="text/css">
 
 	@stack('head')
 
@@ -22,8 +22,17 @@
 	<div id ="wrapper">
 
 		<header class="banner">
-			<h1>HES - Dynamic Web Applications - Project 3</h1>
+			<h1><a href="/">HES - Dynamic Web Applications - Project 3</a></h1>
 			<h2>{{ config('app.name') }}</h2>
+
+			<nav>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/create">Search</a></li>
+					<li><a href="/about">About</a></li>
+				</ul>
+			</nav>
+
 		</header>
 
 		<section>
