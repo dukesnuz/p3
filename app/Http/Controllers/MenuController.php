@@ -27,38 +27,37 @@ class MenuController extends Controller
 
 	public function create()
 	{
-		return view('menu.create');
+		$proteinArray=['beef', 'chicken', 'fish'];
+		return view('menu.create')->with([
+			'proteinArray' => $proteinArray,
+		]);
 	}
 
 // working here
 	public function search(Request $request)
-	{
+    {
 		$path = database_path('menu.json');
 		$menuJson = file_get_contents($path);
 		$dishes = json_decode($menuJson, true);
 
 		$foundDishes = [];
 		if ($request->input('maxCalories')) {
+			$nutrition=$request->input('nutrition');
 			$maxCalories=$request->input('maxCalories');
+			$protein=$request->input('protein');
+
 			foreach ($dishes as $key => $dish) {
-				if ($maxCalories < $dish['calories']) {
-					array_push($foundDishes, $key);
-				}
-			}
-			dump($foundDishes);
-		}
+	             if ($dishes[$key]['calories'] <= $maxCalories &&
+				     $nutrition == $dishes[$key]['nutrition'] &&
+					 $protein == $dishes[$key]['protein']) {
+					 $foundDishes[$key] = $dish;
+	              }
+	        }
+            dump($dish);
+	        return view('menu.search')->with([
+		         'foundDishes' => $foundDishes,
+	 	    ]);
+	    }
 
-		return redirect('show/')->with([
-			$foundDishes,
-		]);
-	}
-// working here
-	public function show(Request $request)
-	{
-		//return view('menu.show')->with([
-		//   'foundDishes' => $foundDishes,
-		// ]);
-		return view('menu.show');
-	}
-
+    }
 }
