@@ -37,20 +37,15 @@ fieldset p {
 label {
 	display: inline-block;
 	font-weight: bold;
+    margin-right: 20px;
+	width: 125px;
 }
-span.error {
+.error {
 	color: red;
 	display: inherit;
 	font-size: .95em;
 	font-weight: bold;
 	margin-left: 15px;
-}
-button {
-	margin-left: 25px;
-	border: 2px solid;
-	padding: 5px;
-	font-weight: bold;
-	margin-top: 25px;
 }
 footer {
 	background-color: #F0FFF0;
@@ -61,6 +56,15 @@ input[type="text"], select, button {
 	border-radius: 10px;
 	background-color: #FAFAD2;
 	padding: 5px;
+	width: 275px;
+	text-align: center;
+}
+button {
+	margin-left: 25px;
+	border: 2px solid;
+	font-weight: bold;
+	margin-top: 25px;
+	width: 400px;
 }
 .outputDisplay {
 	background-color: #fff;
@@ -72,8 +76,9 @@ input[type="text"], select, button {
 	background-color: #F5F5DC;
 	margin-bottom: 25px;
 }
-.outputHide {
-	display: none;
+.dishTitle {
+	font-size: 1.5em;
+	font-weight: bold;
 }
 a:link {
 	text-decoration: none;
