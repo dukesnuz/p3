@@ -36,6 +36,10 @@ class MenuController extends Controller
 // working here
 	public function search(Request $request)
     {
+		$this->validate($request, [
+		    'maxCalories' => 'required|numeric',
+		]);
+
 		$path = database_path('menu.json');
 		$menuJson = file_get_contents($path);
 		$dishes = json_decode($menuJson, true);

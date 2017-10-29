@@ -9,7 +9,15 @@
     <form action="/search/" method="get">
 		<p>
 		    <label for='maxCalories'>Calories</label>
-		    <input type='text' name='maxCalories' id='maxCalories' value='800'>
+		    <input type='text' name='maxCalories' id='maxCalories' value=''>
+            @if($errors->get('maxCalories'))
+                <ul>
+                    @foreach ($errors->get('maxCalories') as $error)
+                        <li>{{ $error }}</li>
+                        @endforeach
+                </ul>
+            @endif
+
 		</p>
         <p>
             <label for='nutrition'>Nutrition</label>

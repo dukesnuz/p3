@@ -32,6 +32,3 @@ Route::get('/create/', 'MenuController@create');
 
 // Create a search route
 Route::get('/search/', 'MenuController@search');
-
-// Create a show route
-Route::get('/show/', 'MenuController@show');
