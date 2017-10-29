@@ -12,10 +12,8 @@ div#wrapper {
 	background-color: #FFA500;
 	padding: 10px 5% 5px 5%;
 }
-form, .outputDisplay {
-	border: 2px solid #0000CD;
-	Padding: 10px;
-	width: 500px;
+section {
+	padding: 50px;
 }
 ul {
 	list-style: none;
@@ -24,52 +22,60 @@ li {
 	padding: 10px;
 	padding-bottom: 5px;
 }
-p, fieldset {
-	margin-bottom: 25px;
+/** form styles **/
+form {
+	background-color: #fff;
+	padding: 5px;
 }
-fieldset {
-	border-color: #000;
-}
-fieldset p {
-	margin-bottom: 5px;
-	margin-top: 10px;
+form p {
+	margin-left: 50px;
+	margin-top: 20px;
 }
 label {
 	display: inline-block;
-	font-weight: bold;
-    margin-right: 20px;
-	width: 125px;
-}
-.error {
-	color: red;
-	display: inherit;
-	font-size: .95em;
-	font-weight: bold;
-	margin-left: 15px;
-}
-footer {
-	background-color: #F0FFF0;
-	margin-top: 100px;
-	padding: 10px;
 }
 input[type="text"], select, button {
 	border-radius: 10px;
 	background-color: #FAFAD2;
 	padding: 5px;
-	width: 275px;
-	text-align: center;
+}
+p.nutrition {
+	margin-left: 100px;
+}
+select#protein {
+	width: 200px;
 }
 button {
-	margin-left: 25px;
-	border: 2px solid;
+	letter-spacing: 4px;
 	font-weight: bold;
-	margin-top: 25px;
-	width: 400px;
+	padding: 8px;
+}
+.error {
+	color: red;
+	font-size: .95em;
+	font-weight: bold;
+}
+.error li {
+	padding: 0;
+	margin: 0;
+	margin-left: 110px;
+	margin-bottom: 50px;
+}
+ul.error {
+	margin: 0;
+	padding: 0;
+}
+/* END form styles */
+footer {
+	background-color: #F0FFF0;
+	margin-top: 100px;
+	padding: 10px;
 }
 .outputDisplay {
 	background-color: #fff;
 	margin-top: 20px;
 	margin-bottom: 25px;
+	padding: 25px;
 }
 .dishDisplayed {
 	font-size: 1.1em;
@@ -84,13 +90,13 @@ a:link {
 	text-decoration: none;
 }
 nav li {
-    display: inline-block;
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 5px 5px 0 0;
-    width: 60px;
-    text-align: center;
-    background-color: snow;
-    font-weight: bold;
-    letter-spacing: 2px;
+	display: inline-block;
+	border: 2px solid #fff;
+	padding: 5px;
+	border-radius: 5px 5px 0 0;
+	width: 60px;
+	text-align: center;
+	background-color: snow;
+	font-weight: bold;
+	letter-spacing: 2px;
 }

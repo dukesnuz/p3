@@ -12,8 +12,7 @@
 	    @yield('title')
 	</title>
 
-	<!-- Fonts -->
-	<link href="/css/p3.css?a=1" rel="stylesheet" type="text/css">
+	<link href="/css/p3.css?t=<?php echo rand(); ?>" rel="stylesheet" type="text/css">
 
 	@stack('head')
 
@@ -28,7 +27,7 @@
 			<nav>
 				<ul>
 					<li><a href="/">Home</a></li>
-					<li><a href="find-dish/a">Not sure what this will be</a></li>
+					<li><a href="/show/">Dishes</a></li>
 					<li><a href="/create">Search</a></li>
 					<li><a href="/about">About</a></li>
 				</ul>

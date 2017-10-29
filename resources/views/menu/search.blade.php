@@ -6,11 +6,11 @@
 @endsection
 
 @section('content')
-@if (count($foundDishes) > 0)
-    <h3>Found Dishes</h3>
+@if(count($foundDishes) > 0)
+    <h3>{{ $heading }}</h3>
     @foreach ($foundDishes as $key => $foundDish)
         <ul class='dishDisplayed'>
-            <li><strong>{{ ucwords($key) }}</strong</li>
+            <li class='dishTitle'>{{ ucwords($key) }}</li>
             <li><strong>Appetizer:</strong>&nbsp;{{ ucwords($foundDish['appetizer']) }}</li>
             <li><strong>Entree</strong></li>
             @foreach ($foundDish['entree'] as $key => $entree)
@@ -24,6 +24,6 @@
         <li><strong>Nutrition:</strong>&nbsp;{{ ucwords($foundDish['nutrition']) }}</li>
     @endforeach
 @else
-  <p><span class='error'>No dishes match your search. Please try <a href='/create/'>again</a></p>.
+    <p class='outputDisplay'>No dishes match your search. Please try <a href='/create/'>again</a></p>.
 @endif
 @endsection

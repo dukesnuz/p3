@@ -25,10 +25,13 @@ Route::get('/', 'UtilitiesController@index');
 Route::get('/about', 'UtilitiesController@about');
 
 // Create route for found dish/es
-Route::get('/find-dish/{title}', 'MenuController@findDish');
+Route::get('/find-dish/{name}', 'MenuController@findDish');
 
 // Create a route for search form to search for dish/es
 Route::get('/create/', 'MenuController@create');
 
 // Create a search route
 Route::get('/search/', 'MenuController@search');
+
+// Show all dishes route
+Route::get('/show/', 'MenuController@show');
