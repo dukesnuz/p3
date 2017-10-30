@@ -39,6 +39,10 @@
 			@yield('content')
 		</section>
 
+		<section>
+            @yield('socialMedia')
+		</section>
+
 		<footer>
             @include('footers.footermain')
 		</footer>
