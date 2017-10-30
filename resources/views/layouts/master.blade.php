@@ -36,7 +36,7 @@
 		</header>
 
 		<section>
-			@yield('content')
+            @yield('content')
 		</section>
 
 		<footer>
