@@ -36,9 +36,9 @@
 		</header>
 
 		<section>
-            @yield('content')
-		</section>
-
+			@yield('content')
+        </section>
+		
 		<footer>
 			@include('footers.footermain')
 		</footer>
