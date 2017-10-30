@@ -1,5 +1,6 @@
 @extends('layouts.master')
 
+
 @section('title')
     About
 @endsection
@@ -11,7 +12,7 @@
 
 @section('content')
     <div class="content">
-	    <h1>About</h1>
+	    <h2>About</h2>
 	    <p>What is this about</p>
     </div>
 @endsection

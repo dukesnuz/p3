@@ -1,5 +1,6 @@
 <?php
-/* not using this Controllers
+/*---------------------------------
+* not using this Controllers
 * Replaced with UtilitiesController
 *
 namespace App\Http\Controllers;
@@ -13,4 +14,4 @@ class WelcomeController extends Controller
 		return view('welcome');
 	}
 }
-*/
+----------------------------------*/

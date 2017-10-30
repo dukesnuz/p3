@@ -1,4 +1,8 @@
 <?php
+/*---------------------------------
+* UtilitiesController.php
+* Utilities Controller
+---------------------------------*/
 
 namespace App\Http\Controllers;
 
