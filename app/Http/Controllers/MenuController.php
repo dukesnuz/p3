@@ -1,29 +1,15 @@
 <?php
-/*------------------------------------
-*  Created 2 controllers to diplay form and display found menu items
+/*--------------------------------------
+* MenuController.php
 --------------------------------------*/
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-/* Get data from Json file this class is reusable. I tried to put this class
-*  in my Libray folder - not able to get it working so I am leaving it here
-* for now.
-*/
-class data
-{
-    public function getData()
-    {
-	     $path = database_path('menu.json');
-	     $menuJson = file_get_contents($path);
-	     $dishesJson = json_decode($menuJson, true);
-	     return $dishesJson;
-    }
-}
+use David\Data;
 
 class MenuController extends Controller
 {
-
+    // Get dish description
 	public function findDish(Request $request)
 	{
        $data = new data();
@@ -59,12 +45,13 @@ class MenuController extends Controller
 	public function create()
 	{
 		$proteinArray=['&nbsp;', 'beef', 'chicken', 'eggs', 'fish', 'pork'];
+
 		return view('menu.create')->with([
 			'proteinArray' => $proteinArray,
 		]);
 	}
 
-// Search and print results
+// Search and print search results
 	public function search(Request $request)
     {
 		$this->validate($request, [

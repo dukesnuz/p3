@@ -1,7 +1,8 @@
 <?php
+
 namespace David;
 
-class data
+class Data
 {
     public function getData()
     {
