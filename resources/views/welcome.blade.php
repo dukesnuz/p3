@@ -8,11 +8,9 @@
 @section('content')
     <h3>Dinner is Served</h3>
     <p class='outputDisplay'>Welcome to What's for Dinner. Search our menu to find your favorite dish for dinner</p>
-@endsection
 
-@section('socialMedia')
     <div class='socialMedia'>
-        <h3>Simply Wanted to Pratice Using a Package.</h3>
-        @embed('https://twitter.com/harvardext')
+        <h3>Simply Wanted to Practice Using a Package.</h3>
+        @twitter('HarvardEXT/status/923182868691595265')
     </div>
 @endsection
