@@ -40,7 +40,7 @@
 		</section>
 
 		<footer>
-            @include('footers.footermain')
+			@include('footers.footermain')
 		</footer>
 
 	</div><!--END wrapper div-->
