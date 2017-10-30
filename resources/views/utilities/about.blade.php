@@ -12,7 +12,9 @@
 
 @section('content')
     <div class="content">
-	    <h2>About</h2>
-	    <p>What is this about</p>
+        <h2>About</h2>
+        <p>This app is my Project 3. It is a simple app that finds food dishes according to
+            the search criteria.
+        </p>
     </div>
 @endsection
