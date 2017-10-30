@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="HES - Dynamic Web Applications - Project Three">
-    <meta name="keywords" content="html, css, php">
-    <meta name="author" content="David Petringa">
+	<meta name="keywords" content="html, css, php">
+	<meta name="author" content="David Petringa">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
