@@ -30,4 +30,4 @@
     @else
     <p class='outputDisplay'>No dishes match your search. Please try <a href='/create/'>again</a></p>.
     @endif
-    @endsection
+@endsection
