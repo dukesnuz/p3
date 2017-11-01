@@ -16,13 +16,13 @@
             <li class='dishTitle'>{{ ucwords($key) }}</li>
             <li><strong>Appetizer:</strong>&nbsp;{{ ucwords($foundDish['appetizer']) }}</li>
             <li><strong>Entree</strong></li>
-             @foreach ($foundDish['entree'] as $key => $entree)
-                <li>
-                    <ul>
+            <li>
+                <ul>
+                    @foreach ($foundDish['entree'] as $key => $entree)
                         <li>{{ ucwords($entree) }}</li>
-                    </ul>
-                </li>
-            @endforeach
+                    @endforeach
+                </ul>
+            </li>
             <li><strong>Desert:</strong>&nbsp;{{ ucwords($foundDish['desert']) }}</li>
             <li><strong>Protein:</strong>&nbsp;{{ ucwords($foundDish['protein']) }}</li>
             <li><strong>Calories:</strong>&nbsp;{{ ucwords($foundDish['calories']) }}</li>
