@@ -30,7 +30,7 @@ class MenuController extends Controller
 
 	}
 
-// Show all dishes
+    // Show all dishes
     public function show()
     {
 		$data = new data();
@@ -41,7 +41,7 @@ class MenuController extends Controller
 	    ]);
     }
 
-// Print the form
+    // Print the form
 	public function create()
 	{
 		$proteinArray=['&nbsp;', 'beef', 'chicken', 'eggs', 'fish', 'pork'];
@@ -51,7 +51,7 @@ class MenuController extends Controller
 		]);
 	}
 
-// Search and print search results
+    // Search and print search results
 	public function search(Request $request)
     {
 		$this->validate($request, [
@@ -76,9 +76,9 @@ class MenuController extends Controller
 
 			foreach ($dishes as $key => $dish) {
 	             if($dishes[$key]['calories'] <= $maxCalories &&
-				     $nutrition == $dishes[$key]['nutrition'] &&
-					 $protein == $dishes[$key]['protein']) {
-					 $foundDishes[$key] = $dish;
+				    $nutrition == $dishes[$key]['nutrition'] &&
+					$protein == $dishes[$key]['protein']) {
+					$foundDishes[$key] = $dish;
 	              }
 	        }
 

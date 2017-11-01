@@ -5,9 +5,9 @@
     About
 @endsection
 
-{{--simply wanted to demonstrate using @push--}}
+{{-- simply wanted to demonstrate using @push --}}
 @push('head')
-    <link href="/css/p3_about.css?a=x" rel="stylesheet" type="text/css">
+    <link href="/css/p3_about.css?t=<?php echo rand(); ?>" rel="stylesheet" type="text/css">
 @endpush
 
 @section('content')

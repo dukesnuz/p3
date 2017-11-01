@@ -21,8 +21,8 @@
             @endif
         </p>
         <p class='nutrition'>
-            <label><input type="radio" name="nutrition" value="diet" {{ ((old('nutrition') == 'diet') or (isset($nutrition) and $nutrition == 'diet')) ? 'checked' : '' }}>Diet Dish</label>
-            <label><input type="radio" name="nutrition" value="nonDiet" {{ ((old('nutrition') == 'nonDiet') or (isset($nutrition) and $nutrition == 'nonDiet')) ? 'checked' : '' }}>Non Diet Dish</label>
+            <label><input type='radio' name='nutrition' value='diet' {{ ((old('nutrition') == 'diet') or (isset($nutrition) and $nutrition == 'diet')) ? 'checked' : '' }}>Diet Dish</label>
+            <label><input type='radio' name='nutrition' value='nonDiet' {{ ((old('nutrition') == 'nonDiet') or (isset($nutrition) and $nutrition == 'nonDiet')) ? 'checked' : '' }}>Non Diet Dish</label>
         </p>
             @if($errors->get('nutrition'))
                 <ul class='error'>
@@ -33,9 +33,9 @@
             @endif
         <p>
             <label for='protein'>Protein</label>
-            <select name="protein" id="protein">
+            <select name='protein' id='protein'>
                 @foreach ($proteinArray as $protein)
-                    <option value="{{ $protein }}" {{ (old('protein', $proteinArray ?? '') == $protein) ? 'selected' : ''}}>{{ ucwords($protein) }}</option>
+                    <option value='{{ $protein }}' {{ (old('protein', $proteinArray ?? '') == $protein) ? 'selected' : ''}}>{{ ucwords($protein) }}</option>
                 @endforeach
             </select>
                 @if($errors->get('protein'))
@@ -47,7 +47,7 @@
                 @endif
         </p>
         <p>
-            <button type="submit">Select your dinner</button>
+            <button type='submit'>Select your dinner</button>
         </p>
     </form>
 @endsection

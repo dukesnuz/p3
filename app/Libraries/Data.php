@@ -1,5 +1,7 @@
 <?php
-
+/***************************
+* This class retrieves json data from menu.json file
+****************************/
 namespace David;
 
 class Data

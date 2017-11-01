@@ -22,7 +22,7 @@ Route::get('/env', function () {
 Route::get('/', 'UtilitiesController@index');
 
 // Create a route for an about view
-Route::get('/about', 'UtilitiesController@about');
+Route::get('/about/', 'UtilitiesController@about');
 
 // Create route for found dish/es
 Route::get('/find-dish/{name}', 'MenuController@findDish');

@@ -28,8 +28,8 @@
 				<ul>
 					<li><a href="/">Home</a></li>
 					<li><a href="/show/">Dishes</a></li>
-					<li><a href="/create">Search</a></li>
-					<li><a href="/about">About</a></li>
+					<li><a href="/create/">Search</a></li>
+					<li><a href="/about/">About</a></li>
 				</ul>
 			</nav>
 
@@ -38,7 +38,7 @@
 		<section>
 			@yield('content')
         </section>
-		
+
 		<footer>
 			@include('footers.footermain')
 		</footer>
