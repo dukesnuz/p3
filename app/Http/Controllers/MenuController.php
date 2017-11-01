@@ -24,7 +24,7 @@ class MenuController extends Controller
 		 }
 
 		return view('menu.search')->with([
-			 'heading' => 'Dish Desscription',
+			 'heading' => 'Dish Description',
 			 'foundDishes' => $foundDishes,
 		]);
 

@@ -1,4 +1,6 @@
 {{-- views/book/menu/search.blade.php --}}
+{{-- This template is used for the finddish method and the search method --}}
+{{-- I am using $heading to display a message depending on which method is called --}}
 @extends('layouts.master')
 
 
@@ -28,6 +30,8 @@
         </ul>
         @endforeach
     @else
-    <p class='outputDisplay'>No dishes match your search. Please try <a href='/create/'>again</a></p>.
+    <p class='outputDisplay'>
+        No dishes match your search. Please try <a href='/create/'>again</a>
+    </p>.
     @endif
 @endsection

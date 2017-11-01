@@ -8,7 +8,7 @@
 @section('content')
     <h3>Dinner is Served</h3>
     <p class='outputDisplay'>
-        Welcome to {{ config('app.name') }}. Search our menu to 
+        Welcome to the {{ config('app.name') }} app. Search our menu to 
         find your favorite dish for dinner.
     </p>
 
